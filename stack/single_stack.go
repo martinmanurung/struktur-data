@@ -1,4 +1,4 @@
-package main
+package stack
 
 import (
 	"fmt"
@@ -31,7 +31,6 @@ func (s *Stack) push(x int) error {
 
 func (s *Stack) pop() error {
 	if s.top == -1 {
-
 		return fmt.Errorf("Stack underflow")
 	} else {
 		x := s.a[s.top]
